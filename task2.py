@@ -2,7 +2,7 @@ from collections import deque
 
 def palindrome(text):
     d = deque()
-    lst = str(text).replace(' ', '')
+    lst = str(text).upper().replace(' ', '')
 
     for el in lst:
         d.append(el)
@@ -16,7 +16,7 @@ def palindrome(text):
     else:
         print(f'{text} є поліндромом')
 
-text = '1234566 54321'
+text = '123qwewq321'
 palindrome(text)
                 
             
